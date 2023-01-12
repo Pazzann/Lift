@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://settings.gd" type="Script" id=1]
+[ext_resource path="res://play.png" type="Texture" id=2]
 
 [node name="Control" type="Control"]
 anchor_right = 1.0
@@ -71,7 +72,144 @@ margin_right = 252.0
 margin_bottom = 132.0
 text = "0"
 
+[node name="PLACE_COUNT_add" type="Button" parent="."]
+anchor_right = 0.009
+anchor_bottom = 0.021
+margin_left = 249.0
+margin_top = 142.0
+margin_right = 257.784
+margin_bottom = 149.4
+
+[node name="PLACE_COUNT_minus" type="Button" parent="."]
+anchor_right = 0.009
+anchor_bottom = 0.021
+margin_left = 250.0
+margin_top = 173.0
+margin_right = 258.784
+margin_bottom = 180.4
+
+[node name="PLACE_COUNT" type="Label" parent="."]
+margin_left = 67.0
+margin_top = 165.0
+margin_right = 205.0
+margin_bottom = 193.0
+text = "PLACE_COUNT"
+
+[node name="PLACE_COUNT_value" type="Label" parent="."]
+margin_left = 219.0
+margin_top = 164.0
+margin_right = 243.0
+margin_bottom = 191.0
+text = "0"
+
+[node name="REPAIR_TIME_add" type="Button" parent="."]
+anchor_right = 0.009
+anchor_bottom = 0.021
+margin_left = 248.0
+margin_top = 204.0
+margin_right = 256.784
+margin_bottom = 211.4
+
+[node name="REPAIR_TIME_minus" type="Button" parent="."]
+anchor_right = 0.009
+anchor_bottom = 0.021
+margin_left = 247.0
+margin_top = 234.0
+margin_right = 255.784
+margin_bottom = 241.4
+
+[node name="REPAIR_TIME" type="Label" parent="."]
+margin_left = 68.0
+margin_top = 216.0
+margin_right = 206.0
+margin_bottom = 244.0
+text = "REPAIR_TIME"
+
+[node name="REPAIR_TIME_value" type="Label" parent="."]
+margin_left = 210.0
+margin_top = 214.0
+margin_right = 234.0
+margin_bottom = 241.0
+text = "0"
+
+[node name="HAPPY_TIME_add" type="Button" parent="."]
+anchor_right = 0.009
+anchor_bottom = 0.021
+margin_left = 248.0
+margin_top = 204.0
+margin_right = 256.784
+margin_bottom = 211.4
+
+[node name="HAPPY_TIME_minus" type="Button" parent="."]
+anchor_right = 0.009
+anchor_bottom = 0.021
+margin_left = 247.0
+margin_top = 234.0
+margin_right = 255.784
+margin_bottom = 241.4
+
+[node name="HAPPY_TIME" type="Label" parent="."]
+margin_left = 68.0
+margin_top = 216.0
+margin_right = 206.0
+margin_bottom = 244.0
+text = "REPAIR_TIME"
+
+[node name="HAPPY_TIME_value" type="Label" parent="."]
+margin_left = 210.0
+margin_top = 214.0
+margin_right = 234.0
+margin_bottom = 241.0
+text = "0"
+
+[node name="GEN_TIME_add" type="Button" parent="."]
+anchor_right = 0.009
+anchor_bottom = 0.021
+margin_left = 248.0
+margin_top = 204.0
+margin_right = 256.784
+margin_bottom = 211.4
+
+[node name="GEN_TIME_minus" type="Button" parent="."]
+anchor_right = 0.009
+anchor_bottom = 0.021
+margin_left = 247.0
+margin_top = 234.0
+margin_right = 255.784
+margin_bottom = 241.4
+
+[node name="HAPPY_TIME2" type="Label" parent="."]
+margin_left = 68.0
+margin_top = 216.0
+margin_right = 206.0
+margin_bottom = 244.0
+text = "REPAIR_TIME"
+
+[node name="HAPPY_TIME_value2" type="Label" parent="."]
+margin_left = 210.0
+margin_top = 214.0
+margin_right = 234.0
+margin_bottom = 241.0
+text = "0"
+
+[node name="Play" type="Button" parent="."]
+anchor_left = -0.104
+anchor_right = -0.104
+margin_left = -0.503998
+margin_right = 61.496
+margin_bottom = 56.0
+icon = ExtResource( 2 )
+
 [connection signal="pressed" from="MAX_QUEUE_COUNT_add" to="." method="_on_MAX_QUEUE_COUNT_add_pressed"]
 [connection signal="pressed" from="MAX_QUEUE_COUNT_minus" to="." method="_on_MAX_QUEUE_COUNT_minus_pressed"]
 [connection signal="pressed" from="MAX_QUEUE_TIME_add" to="." method="_on_MAX_QUEUE_TIME_add_pressed"]
 [connection signal="pressed" from="MAX_QUEUE_TIME_minus" to="." method="_on_MAX_QUEUE_TIME_minus_pressed"]
+[connection signal="pressed" from="PLACE_COUNT_add" to="." method="_on_PLACE_COUNT_add_pressed"]
+[connection signal="pressed" from="PLACE_COUNT_minus" to="." method="_on_PLACE_COUNT_minus_pressed"]
+[connection signal="pressed" from="REPAIR_TIME_add" to="." method="_on_REPAIR_TIME_add_pressed"]
+[connection signal="pressed" from="REPAIR_TIME_minus" to="." method="_on_REPAIR_TIME_minus_pressed"]
+[connection signal="pressed" from="HAPPY_TIME_add" to="." method="_on_HAPPY_TIME_add_pressed"]
+[connection signal="pressed" from="HAPPY_TIME_minus" to="." method="_on_HAPPY_TIME_minus_pressed"]
+[connection signal="pressed" from="GEN_TIME_add" to="." method="_on_HAPPY_TIME_add_pressed"]
+[connection signal="pressed" from="GEN_TIME_minus" to="." method="_on_HAPPY_TIME_minus_pressed"]
+[connection signal="pressed" from="Play" to="." method="_on_Play_pressed"]
