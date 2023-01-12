@@ -18,7 +18,7 @@ func LiftMove():
 	moveIntoALift = true
 	var collisionShape = get_child(1) as CollisionShape2D
 	collisionShape.disabled = true
-	move_and_collide(Vector2(10, 0))
+	move_and_collide(Vector2(rand_range(10, 20), 0))
 	var livers = get_parent().get_children()
 	for liver in livers:
 		liver.moveInQueue()
@@ -32,6 +32,10 @@ func SetCurrFloor(floornum,isOpenedDoor):
 		queue_free()
 	else:
 		currFloor = floornum
+
+
+
+
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -66,6 +70,7 @@ func move(velocity):
 	var parent = get_parent()
 	var waiter_count = parent.get_child_count();
 	if(waiter_count > maxQueueCount):
+		Global.PASSENGERS_LOST += 1
 		queue_free()
 		return
 	return velocity
@@ -79,6 +84,5 @@ func checkLeave():
 		happy = false
 		animation.self_modulate = Color(1, 1, 1, 1)
 	if(time > maxQueueTime):
+		Global.PASSENGERS_LOST += 1
 		queue_free();
-		var animation = get_child(0) as AnimatedSprite
-		animation.play("walk")
