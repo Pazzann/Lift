@@ -33,6 +33,7 @@ func _process(delta):
 		$Lift.stop()
 	
 	floor_n = round(($Lift.position.y / 150)) + 3
+	Global.LIFT_FLOOR = floor_n
 	
 func random_person():
 	print("hgf")

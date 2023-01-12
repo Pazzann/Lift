@@ -38,6 +38,7 @@ func _ready():
 func toogle_lift():
 	$LiftSprite.play("open_close", isOpened)
 	isOpened = !isOpened
+	Global.IS_OPENNED_DOOR = isOpened
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
