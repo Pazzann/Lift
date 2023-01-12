@@ -8,10 +8,6 @@
 [node name="Control" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = 3.0
-margin_top = 1.0
-margin_right = 3.0
-margin_bottom = 1.0
 script = ExtResource( 1 )
 
 [node name="MAX_QUEUE_COUNT" type="Label" parent="."]
@@ -22,7 +18,7 @@ margin_bottom = 73.0
 text = "MAX_QUEUE_COUNT"
 
 [node name="MAX_QUEUE_COUNT_value" type="Label" parent="."]
-margin_left = 220.0
+margin_left = 275.0
 margin_top = 45.0
 margin_right = 256.0
 margin_bottom = 75.0
@@ -31,9 +27,9 @@ text = "0"
 [node name="MAX_QUEUE_COUNT_add" type="Button" parent="."]
 anchor_right = 0.009
 anchor_bottom = 0.021
-margin_left = 248.0
+margin_left = 305.0
 margin_top = 25.0
-margin_right = 260.784
+margin_right = 317.784
 margin_bottom = 32.4
 size_flags_horizontal = 4
 size_flags_vertical = 4
@@ -43,24 +39,30 @@ icon_align = 1
 [node name="MAX_QUEUE_COUNT_minus" type="Button" parent="."]
 anchor_right = 0.009
 anchor_bottom = 0.021
-margin_left = 248.0
-margin_top = 53.0
+margin_left = 305.0
+margin_top = 55.0
+margin_right = 317.784
+margin_bottom = 62.4
 icon = ExtResource( 3 )
 icon_align = 1
 
 [node name="MAX_QUEUE_TIME_add" type="Button" parent="."]
 anchor_right = 0.009
 anchor_bottom = 0.021
-margin_left = 248.0
+margin_left = 305.0
 margin_top = 87.0
+margin_right = 317.784
+margin_bottom = 94.4
 icon = ExtResource( 4 )
 icon_align = 1
 
 [node name="MAX_QUEUE_TIME_minus" type="Button" parent="."]
 anchor_right = 0.009
 anchor_bottom = 0.021
-margin_left = 248.0
+margin_left = 305.0
 margin_top = 115.0
+margin_right = 317.784
+margin_bottom = 122.4
 icon = ExtResource( 3 )
 icon_align = 1
 
@@ -72,7 +74,7 @@ margin_bottom = 133.0
 text = "MAX_QUEUE_TIME"
 
 [node name="MAX_QUEUE_TIME_value" type="Label" parent="."]
-margin_left = 220.0
+margin_left = 275.0
 margin_top = 105.0
 margin_right = 246.0
 margin_bottom = 132.0
@@ -81,16 +83,20 @@ text = "0"
 [node name="PLACE_COUNT_add" type="Button" parent="."]
 anchor_right = 0.009
 anchor_bottom = 0.021
-margin_left = 248.0
+margin_left = 305.0
 margin_top = 142.0
+margin_right = 317.784
+margin_bottom = 149.4
 icon = ExtResource( 4 )
 icon_align = 1
 
 [node name="PLACE_COUNT_minus" type="Button" parent="."]
 anchor_right = 0.009
 anchor_bottom = 0.021
-margin_left = 248.0
+margin_left = 305.0
 margin_top = 173.0
+margin_right = 317.784
+margin_bottom = 180.4
 icon = ExtResource( 3 )
 icon_align = 1
 
@@ -102,25 +108,29 @@ margin_bottom = 193.0
 text = "PLACE_COUNT"
 
 [node name="PLACE_COUNT_value" type="Label" parent="."]
-margin_left = 220.0
+margin_left = 275.0
 margin_top = 165.0
-margin_right = 244.0
+margin_right = 299.0
 margin_bottom = 192.0
 text = "0"
 
 [node name="REPAIR_TIME_add" type="Button" parent="."]
 anchor_right = 0.009
 anchor_bottom = 0.021
-margin_left = 248.0
+margin_left = 305.0
 margin_top = 204.0
+margin_right = 317.784
+margin_bottom = 211.4
 icon = ExtResource( 4 )
 icon_align = 1
 
 [node name="REPAIR_TIME_minus" type="Button" parent="."]
 anchor_right = 0.009
 anchor_bottom = 0.021
-margin_left = 248.0
+margin_left = 305.0
 margin_top = 234.0
+margin_right = 317.784
+margin_bottom = 241.4
 icon = ExtResource( 3 )
 icon_align = 1
 
@@ -132,16 +142,16 @@ margin_bottom = 253.0
 text = "REPAIR_TIME"
 
 [node name="REPAIR_TIME_value" type="Label" parent="."]
-margin_left = 220.0
+margin_left = 275.0
 margin_top = 225.0
-margin_right = 244.0
+margin_right = 299.0
 margin_bottom = 252.0
 text = "0"
 
 [node name="HAPPY_TIME_add" type="Button" parent="."]
 anchor_right = 0.009
 anchor_bottom = 0.021
-margin_left = 248.0
+margin_left = 305.0
 margin_top = 382.0
 icon = ExtResource( 4 )
 icon_align = 1
@@ -149,10 +159,8 @@ icon_align = 1
 [node name="HAPPY_TIME_minus" type="Button" parent="."]
 anchor_right = 0.009
 anchor_bottom = 0.021
-margin_left = 248.0
+margin_left = 305.0
 margin_top = 413.0
-margin_right = 266.784
-margin_bottom = 422.4
 icon = ExtResource( 3 )
 icon_align = 1
 
@@ -164,24 +172,26 @@ margin_bottom = 433.0
 text = "HAPPY_TIME"
 
 [node name="HAPPY_TIME_value" type="Label" parent="."]
-margin_left = 220.0
+margin_left = 275.0
 margin_top = 405.0
-margin_right = 244.0
+margin_right = 299.0
 margin_bottom = 432.0
 text = "0"
 
 [node name="GEN_TIME_add" type="Button" parent="."]
 anchor_right = 0.009
 anchor_bottom = 0.021
-margin_left = 248.0
+margin_left = 305.0
 margin_top = 261.0
+margin_right = 317.784
+margin_bottom = 268.4
 icon = ExtResource( 4 )
 icon_align = 1
 
 [node name="GEN_TIME_minus" type="Button" parent="."]
 anchor_right = 0.009
 anchor_bottom = 0.021
-margin_left = 248.0
+margin_left = 305.0
 margin_top = 289.0
 icon = ExtResource( 3 )
 icon_align = 1
@@ -194,16 +204,16 @@ margin_bottom = 306.0
 text = "GEN_TIME"
 
 [node name="GEN_TIME_value" type="Label" parent="."]
-margin_left = 220.0
+margin_left = 275.0
 margin_top = 285.0
-margin_right = 244.0
+margin_right = 299.0
 margin_bottom = 312.0
 text = "0"
 
 [node name="TARGET_THANKS_add" type="Button" parent="."]
 anchor_right = 0.009
 anchor_bottom = 0.021
-margin_left = 248.0
+margin_left = 305.0
 margin_top = 319.0
 icon = ExtResource( 4 )
 icon_align = 1
@@ -211,7 +221,7 @@ icon_align = 1
 [node name="TARGET_THANKS_minus" type="Button" parent="."]
 anchor_right = 0.009
 anchor_bottom = 0.021
-margin_left = 248.0
+margin_left = 305.0
 margin_top = 347.0
 icon = ExtResource( 3 )
 icon_align = 1
@@ -224,45 +234,46 @@ margin_bottom = 365.0
 text = "TARGET_THANKS"
 
 [node name="TARGET_THANKS_value" type="Label" parent="."]
-margin_left = 220.0
+margin_left = 275.0
 margin_top = 345.0
-margin_right = 244.0
+margin_right = 299.0
 margin_bottom = 371.0
 text = "0"
 
 [node name="PASSENGERS_LOST_ALLOWED_add" type="Button" parent="."]
 anchor_right = 0.009
 anchor_bottom = 0.021
-margin_left = 238.0
-margin_top = 491.0
-margin_right = 256.784
-margin_bottom = 500.4
+margin_left = 305.0
+margin_top = 445.0
+margin_right = 317.784
+margin_bottom = 452.4
 icon = ExtResource( 4 )
 icon_align = 1
 
 [node name="PASSENGERS_LOST_ALLOWED_minus" type="Button" parent="."]
 anchor_right = 0.009
 anchor_bottom = 0.021
-margin_left = 238.0
-margin_top = 517.0
-margin_right = 256.784
-margin_bottom = 526.4
+margin_left = 305.0
+margin_top = 475.0
+margin_right = 317.784
+margin_bottom = 482.4
 icon = ExtResource( 3 )
 icon_align = 1
 
 [node name="PASSENGERS_LOST_ALLOWED" type="Label" parent="."]
-margin_left = 29.0
-margin_top = 511.0
-margin_right = 217.0
-margin_bottom = 539.0
+margin_left = 75.0
+margin_top = 465.0
+margin_right = 263.0
+margin_bottom = 493.0
 text = "PASSENGERS_LOST_ALLOWED"
 
 [node name="PASSENGERS_LOST_ALLOWED_value" type="Label" parent="."]
-margin_left = 224.0
-margin_top = 513.0
-margin_right = 245.0
-margin_bottom = 539.0
+margin_left = 275.0
+margin_top = 465.0
+margin_right = 296.0
+margin_bottom = 491.0
 text = "0"
+percent_visible = 2.0
 
 [node name="Play" type="Button" parent="."]
 anchor_left = -0.104
