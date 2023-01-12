@@ -1,24 +1,109 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Main.gd" type="Script" id=1]
 [ext_resource path="res://Lift.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Floor.tscn" type="PackedScene" id=3]
 
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 83.5, 10 )
+
 [node name="Main" type="Node2D"]
 script = ExtResource( 1 )
 __meta__ = {
-"_edit_horizontal_guides_": [ -456.0, 427.0, 599.0 ],
+"_edit_horizontal_guides_": [ -456.0, 427.0, 599.0, -600.0 ],
 "_edit_vertical_guides_": [ -360.0, -948.0, -881.0 ]
 }
 
 [node name="Lift" parent="." instance=ExtResource( 2 )]
-position = Vector2( 716, 454 )
+position = Vector2( 720, 464 )
 
 [node name="Camera2D" type="Camera2D" parent="Lift"]
-position = Vector2( -184, 3 )
+position = Vector2( -188, 83 )
 current = true
-limit_top = -450
-limit_bottom = 595
+limit_top = -600
+limit_bottom = 610
 
 [node name="Floors" parent="." instance=ExtResource( 3 )]
 position = Vector2( 533, 2 )
+
+[node name="LiftTrigger9" type="Area2D" parent="."]
+position = Vector2( 720, -576 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LiftTrigger9"]
+position = Vector2( 73.5, -10 )
+shape = SubResource( 1 )
+
+[node name="LiftTrigger8" type="Area2D" parent="."]
+position = Vector2( 720, -432 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LiftTrigger8"]
+position = Vector2( 73.5, -10 )
+shape = SubResource( 1 )
+
+[node name="LiftTrigger7" type="Area2D" parent="."]
+position = Vector2( 720, -283 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LiftTrigger7"]
+position = Vector2( 73.5, -10 )
+shape = SubResource( 1 )
+
+[node name="LiftTrigger6" type="Area2D" parent="."]
+position = Vector2( 720, -134 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LiftTrigger6"]
+position = Vector2( 73.5, -10 )
+shape = SubResource( 1 )
+
+[node name="LiftTrigger5" type="Area2D" parent="."]
+position = Vector2( 720, 19 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LiftTrigger5"]
+position = Vector2( 73.5, -10 )
+shape = SubResource( 1 )
+
+[node name="LiftTrigger3" type="Area2D" parent="."]
+position = Vector2( 722, 164 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LiftTrigger3"]
+position = Vector2( 73.5, -10 )
+shape = SubResource( 1 )
+
+[node name="LiftTrigger2" type="Area2D" parent="."]
+position = Vector2( 721, 318 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LiftTrigger2"]
+position = Vector2( 73.5, -10 )
+shape = SubResource( 1 )
+
+[node name="LiftTrigger1" type="Area2D" parent="."]
+position = Vector2( 721, 468 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LiftTrigger1"]
+position = Vector2( 73.5, -10 )
+shape = SubResource( 1 )
+
+[node name="LiftTrigger0" type="Area2D" parent="."]
+position = Vector2( 729, 621 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LiftTrigger0"]
+position = Vector2( 73.5, -10 )
+shape = SubResource( 1 )
+
+[connection signal="area_entered" from="LiftTrigger9" to="." method="_on_LiftTrigger_area_entered"]
+[connection signal="body_entered" from="LiftTrigger9" to="." method="_on_LiftTrigger_area_entered"]
+[connection signal="area_entered" from="LiftTrigger8" to="." method="_on_LiftTrigger_area_entered"]
+[connection signal="body_entered" from="LiftTrigger8" to="." method="_on_LiftTrigger_area_entered"]
+[connection signal="area_entered" from="LiftTrigger7" to="." method="_on_LiftTrigger_area_entered"]
+[connection signal="body_entered" from="LiftTrigger7" to="." method="_on_LiftTrigger_area_entered"]
+[connection signal="area_entered" from="LiftTrigger6" to="." method="_on_LiftTrigger_area_entered"]
+[connection signal="body_entered" from="LiftTrigger6" to="." method="_on_LiftTrigger_area_entered"]
+[connection signal="area_entered" from="LiftTrigger5" to="." method="_on_LiftTrigger_area_entered"]
+[connection signal="body_entered" from="LiftTrigger5" to="." method="_on_LiftTrigger_area_entered"]
+[connection signal="area_entered" from="LiftTrigger3" to="." method="_on_LiftTrigger_area_entered"]
+[connection signal="body_entered" from="LiftTrigger3" to="." method="_on_LiftTrigger_area_entered"]
+[connection signal="area_entered" from="LiftTrigger2" to="." method="_on_LiftTrigger_area_entered"]
+[connection signal="body_entered" from="LiftTrigger2" to="." method="_on_LiftTrigger_area_entered"]
+[connection signal="area_entered" from="LiftTrigger1" to="." method="_on_LiftTrigger_area_entered"]
+[connection signal="body_entered" from="LiftTrigger1" to="." method="_on_LiftTrigger_area_entered"]
+[connection signal="area_entered" from="LiftTrigger0" to="." method="_on_LiftTrigger_area_entered"]
+[connection signal="body_entered" from="LiftTrigger0" to="." method="_on_LiftTrigger_area_entered"]

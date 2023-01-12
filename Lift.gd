@@ -3,6 +3,9 @@ extends RigidBody2D
 var speed = 200.0
 var isOpened = false
 
+var velocity = Vector2.ZERO
+export(bool) var isMoving = false
+
 # Declare member variables here. Examples:
 # var a = 2
 # var b = "text"
@@ -11,6 +14,17 @@ func _input(event):
 	if event is InputEventKey:
 		if event.pressed and ((event.scancode == KEY_O and !isOpened) or (event.scancode == KEY_C and isOpened)):
 			toogle_lift()
+				
+func move_up():
+	velocity.y = -1.0
+	isMoving = true
+func move_down():			
+	velocity.y = 1.0
+	isMoving = true
+
+func stop():
+	velocity.y = 0.0
+	isMoving = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -22,8 +36,4 @@ func toogle_lift():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	if Input.is_action_pressed("lift_up"):
-		position.y -= delta*speed
-	
-	if Input.is_action_pressed("lift_down"):
-		position.y += delta*speed
+	position += velocity*speed*delta
