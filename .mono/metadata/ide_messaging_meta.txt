@@ -1,2 +1,2 @@
-﻿51556
-C:/Users/user/Desktop/Godot_v3.5.1-stable_mono_win64/Godot_v3.5.1-stable_mono_win64.exe
+﻿57986
+C:/Program Files (x86)/Steam/steamapps/common/Godot Engine/godot.windows.opt.tools.64.exe

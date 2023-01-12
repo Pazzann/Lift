@@ -1,0 +1,9 @@
+C:\Users\manto\OneDrive\Documents\MyGames\Lift\.mono\temp\bin\Debug\Lift.dll
+C:\Users\manto\OneDrive\Documents\MyGames\Lift\.mono\temp\bin\Debug\Lift.pdb
+C:\Users\manto\OneDrive\Documents\MyGames\Lift\.mono\temp\obj\Debug\Lift.csproj.AssemblyReference.cache
+C:\Users\manto\OneDrive\Documents\MyGames\Lift\.mono\temp\obj\Debug\Lift.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\manto\OneDrive\Documents\MyGames\Lift\.mono\temp\obj\Debug\Lift.AssemblyInfoInputs.cache
+C:\Users\manto\OneDrive\Documents\MyGames\Lift\.mono\temp\obj\Debug\Lift.AssemblyInfo.cs
+C:\Users\manto\OneDrive\Documents\MyGames\Lift\.mono\temp\obj\Debug\Lift.csproj.CoreCompileInputs.cache
+C:\Users\manto\OneDrive\Documents\MyGames\Lift\.mono\temp\obj\Debug\Lift.dll
+C:\Users\manto\OneDrive\Documents\MyGames\Lift\.mono\temp\obj\Debug\Lift.pdb
