@@ -13,16 +13,19 @@ func _input(event):
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
+	get_node("GEN_TIME_value").text = str(Global.GEN_TIME)
+	get_node("HAPPY_TIME_value").text = str(Global.HAPPY_TIME)
+	get_node("MAX_QUEUE_COUNT_value").text = str(Global.MAX_QUEUE_COUNT)
+	get_node("MAX_QUEUE_TIME_value").text = str(Global.MAX_QUEUE_TIME)
+	get_node("PLACE_COUNT_value").text = str(Global.PLACE_COUNT)
+	get_node("REPAIR_TIME_value").text = str(Global.REPAIR_TIME)
+	get_node("TARGET_THANKS_value").text = str(Global.TARGET_THANKS)
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 #	pass
 
-
-func _on_Button_pressed():
-	get_node("MAX_QUEUE_COUNT_value").text = str(Global.MAX_QUEUE_COUNT)
 
 
 func _on_MAX_QUEUE_COUNT_add_pressed():
