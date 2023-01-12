@@ -21,9 +21,6 @@ func _ready():
 #	pass
 
 
-func _on_Button_pressed():
-	get_node("MAX_QUEUE_COUNT_value").text = str(Global.MAX_QUEUE_COUNT)
-
 
 func _on_MAX_QUEUE_COUNT_add_pressed():
 	Global.MAX_QUEUE_COUNT += 1
