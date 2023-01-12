@@ -4,7 +4,11 @@
 [ext_resource path="res://Lift.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Floor.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Panel[temp].tscn" type="PackedScene" id=4]
+<<<<<<< HEAD
 [ext_resource path="res://pause.png" type="Texture" id=5]
+=======
+[ext_resource path="res://Sprites/lift-back.png" type="Texture" id=5]
+>>>>>>> a219829ef881cc8a27a30af4ac5cd40f43bede42
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 94.5, 10 )
@@ -18,6 +22,10 @@ __meta__ = {
 "_edit_horizontal_guides_": [ -456.0, 427.0, 599.0, -600.0, -662.0, 617.0, -14.0 ],
 "_edit_vertical_guides_": [ -360.0, -948.0, -881.0 ]
 }
+
+[node name="Lift-back" type="Sprite" parent="."]
+position = Vector2( 534, 2 )
+texture = ExtResource( 5 )
 
 [node name="Lift" parent="." instance=ExtResource( 2 )]
 position = Vector2( 720, 464 )

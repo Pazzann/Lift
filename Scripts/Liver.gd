@@ -26,7 +26,7 @@ func LiftMove():
 
 func SetCurrFloor():
 	currFloor = Global.LIFT_FLOOR;
-	
+	position = Vector2(position.x, Global.LIFT_POS_Y)
 	if(floorNumber == currFloor && Global.IS_OPENNED_DOOR):
 		Global.TOTAL_THANKS+=1
 		if(happy):
@@ -98,5 +98,6 @@ func checkLeave():
 		queue_free();
 	print(Global.IS_OPENNED_DOOR)
 	print(currFloor)
+	print(Global.LIFT_FLOOR)
 	if(currFloor == 8-Global.LIFT_FLOOR && Global.IS_OPENNED_DOOR):
 		LiftMove()

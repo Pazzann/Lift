@@ -14,9 +14,9 @@ func _input(event):
 		elif event.pressed and event.scancode == KEY_S:
 			$Lift.stop()
 		elif !$Lift.isMoving and event.pressed:
-			if event.scancode == KEY_UP and floor_n < 7:
+			if event.scancode == KEY_UP:
 				$Lift.move_up()
-			elif event.scancode == KEY_DOWN and floor_n > 0:
+			elif event.scancode == KEY_DOWN:
 				$Lift.move_down()
 
 # Called when the node enters the scene tree for the first time.
@@ -25,10 +25,8 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	if $Lift.position.y >= 480:
-		$Lift.position.y -= 1
-		$Lift.stop()
-		
+	Global.LIFT_POS_X = $Lift.position.x
+	Global.LIFT_POS_Y = $Lift.position.y
 	#if $Lift.position.y <= -480:
 		#$Lift.position.y += 1
 		#$Lift.stop()
