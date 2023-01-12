@@ -23,7 +23,7 @@ func LiftMove():
 	for liver in livers:
 		if(liver.inQueue):
 				(liver.get_child(1) as CollisionShape2D).disabled = true;
-				liver.position += Vector2(20, 0)
+				liver.position += Vector2(75, 0)
 				(liver.get_child(1) as CollisionShape2D).disabled = false;
 	
 
@@ -91,7 +91,7 @@ func checkLeave():
 		for liver in livers:
 			if(liver.inQueue):
 				(liver.get_child(1) as CollisionShape2D).disabled = true;
-				liver.position += Vector2(75, 0)
+				liver.position += Vector2(25, 0)
 				(liver.get_child(1) as CollisionShape2D).disabled = false;
 
 			
