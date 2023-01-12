@@ -7,6 +7,7 @@ extends Node2D
 var floor_n = 0
 
 func _input(event):
+	print(floor_n)
 	if event is InputEventKey:
 		if event.pressed and event.scancode == KEY_ESCAPE:
 			get_tree().quit()
@@ -28,11 +29,13 @@ func _process(delta):
 		$Lift.position.y -= 1
 		$Lift.stop()
 		
-	if $Lift.position.y <= -480:
-		$Lift.position.y += 1
-		$Lift.stop()
+	#if $Lift.position.y <= -480:
+		#$Lift.position.y += 1
+		#$Lift.stop()
 	
 	floor_n = round(($Lift.position.y / 150)) + 3
+	floor_n = max(0, floor_n)
+	
 	Global.LIFT_FLOOR = floor_n
 	
 func random_person():
