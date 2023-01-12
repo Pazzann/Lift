@@ -1,25 +1,31 @@
 {
   "format": 1,
   "restore": {
-    "/home/egor/Projects/Lift/Lift.csproj": {}
+    "C:\\Users\\manto\\OneDrive\\Documents\\MyGames\\Lift\\Lift.csproj": {}
   },
   "projects": {
-    "/home/egor/Projects/Lift/Lift.csproj": {
+    "C:\\Users\\manto\\OneDrive\\Documents\\MyGames\\Lift\\Lift.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/egor/Projects/Lift/Lift.csproj",
+        "projectUniqueName": "C:\\Users\\manto\\OneDrive\\Documents\\MyGames\\Lift\\Lift.csproj",
         "projectName": "Lift",
-        "projectPath": "/home/egor/Projects/Lift/Lift.csproj",
-        "packagesPath": "/home/egor/.nuget/packages/",
-        "outputPath": "/home/egor/Projects/Lift/.mono/temp/obj/",
+        "projectPath": "C:\\Users\\manto\\OneDrive\\Documents\\MyGames\\Lift\\Lift.csproj",
+        "packagesPath": "C:\\Users\\manto\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\manto\\OneDrive\\Documents\\MyGames\\Lift\\.mono\\temp\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/egor/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\manto\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net472"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -37,15 +43,7 @@
       "frameworks": {
         "net472": {
           "targetAlias": "net472",
-          "dependencies": {
-            "Microsoft.NETFramework.ReferenceAssemblies": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[1.0.2, )",
-              "autoReferenced": true
-            }
-          },
-          "runtimeIdentifierGraphPath": "/snap/dotnet-sdk/192/sdk/7.0.102/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     }

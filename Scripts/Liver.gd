@@ -21,7 +21,10 @@ func LiftMove():
 	move_and_collide(Vector2(rand_range(10, 20), 0))
 	var livers = get_parent().get_children()
 	for liver in livers:
-		liver.moveInQueue()
+		if(liver.inQueue):
+				(liver.get_child(1) as CollisionShape2D).disabled = true;
+				liver.position += Vector2(20, 0)
+				(liver.get_child(1) as CollisionShape2D).disabled = false;
 	
 
 func SetCurrFloor(floornum,isOpenedDoor):
@@ -84,5 +87,13 @@ func checkLeave():
 		happy = false
 		animation.self_modulate = Color(1, 1, 1, 1)
 	if(time > maxQueueTime):
+		var livers = get_parent().get_children()
+		for liver in livers:
+			if(liver.inQueue):
+				(liver.get_child(1) as CollisionShape2D).disabled = true;
+				liver.position += Vector2(75, 0)
+				(liver.get_child(1) as CollisionShape2D).disabled = false;
+
+			
 		Global.PASSENGERS_LOST += 1
 		queue_free();
