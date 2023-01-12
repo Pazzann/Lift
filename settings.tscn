@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://settings.gd" type="Script" id=1]
+[ext_resource path="res://play.png" type="Texture" id=2]
 
 [node name="Control" type="Control"]
 anchor_right = 1.0
@@ -71,7 +72,13 @@ margin_right = 252.0
 margin_bottom = 132.0
 text = "0"
 
+[node name="Play" type="Button" parent="."]
+margin_right = 12.0
+margin_bottom = 20.0
+icon = ExtResource( 2 )
+
 [connection signal="pressed" from="MAX_QUEUE_COUNT_add" to="." method="_on_MAX_QUEUE_COUNT_add_pressed"]
 [connection signal="pressed" from="MAX_QUEUE_COUNT_minus" to="." method="_on_MAX_QUEUE_COUNT_minus_pressed"]
 [connection signal="pressed" from="MAX_QUEUE_TIME_add" to="." method="_on_MAX_QUEUE_TIME_add_pressed"]
 [connection signal="pressed" from="MAX_QUEUE_TIME_minus" to="." method="_on_MAX_QUEUE_TIME_minus_pressed"]
+[connection signal="pressed" from="Play" to="." method="_on_Play_pressed"]

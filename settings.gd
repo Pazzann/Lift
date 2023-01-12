@@ -44,3 +44,7 @@ func _on_MAX_QUEUE_TIME_add_pressed():
 func _on_MAX_QUEUE_TIME_minus_pressed():
 	Global.MAX_QUEUE_TIME -= 1
 	get_node("MAX_QUEUE_TIME_value").text = str(Global.MAX_QUEUE_TIME)
+
+
+func _on_Play_pressed():
+	get_tree().change_scene("Main.tscn")
