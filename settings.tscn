@@ -252,40 +252,6 @@ margin_right = 216.0
 margin_bottom = 360.0
 text = "0"
 
-[node name="TOTAL_THANKS_add" type="Button" parent="."]
-anchor_right = 0.009
-anchor_bottom = 0.021
-margin_left = 249.0
-margin_top = 441.0
-margin_right = 267.784
-margin_bottom = 450.4
-icon = ExtResource( 4 )
-icon_align = 1
-
-[node name="TOTAL_THANKS_minus" type="Button" parent="."]
-anchor_right = 0.009
-anchor_bottom = 0.021
-margin_left = 251.0
-margin_top = 462.0
-margin_right = 269.784
-margin_bottom = 471.4
-icon = ExtResource( 3 )
-icon_align = 1
-
-[node name="TOTAL_THANKS" type="Label" parent="."]
-margin_left = 75.0
-margin_top = 455.0
-margin_right = 213.0
-margin_bottom = 483.0
-text = "TOTAL_THANKS"
-
-[node name="TOTAL_THANKS_value" type="Label" parent="."]
-margin_left = 221.0
-margin_top = 451.0
-margin_right = 242.0
-margin_bottom = 476.0
-text = "0"
-
 [node name="PASSENGERS_LOST_ALLOWED_add" type="Button" parent="."]
 anchor_right = 0.009
 anchor_bottom = 0.021
@@ -320,40 +286,6 @@ margin_right = 245.0
 margin_bottom = 539.0
 text = "0"
 
-[node name="PASSENGERS_LOST_add" type="Button" parent="."]
-anchor_right = 0.009
-anchor_bottom = 0.021
-margin_left = 241.0
-margin_top = 541.0
-margin_right = 259.784
-margin_bottom = 550.4
-icon = ExtResource( 4 )
-icon_align = 1
-
-[node name="PASSENGERS_LOST_minus" type="Button" parent="."]
-anchor_right = 0.009
-anchor_bottom = 0.021
-margin_left = 240.0
-margin_top = 573.0
-margin_right = 258.784
-margin_bottom = 582.4
-icon = ExtResource( 3 )
-icon_align = 1
-
-[node name="PASSENGERS_LOST" type="Label" parent="."]
-margin_left = 64.0
-margin_top = 557.0
-margin_right = 202.0
-margin_bottom = 585.0
-text = "PASSENGERS_LOST"
-
-[node name="PASSENGERS_LOST_value" type="Label" parent="."]
-margin_left = 195.0
-margin_top = 557.0
-margin_right = 216.0
-margin_bottom = 583.0
-text = "0"
-
 [node name="Play" type="Button" parent="."]
 anchor_left = -0.104
 anchor_right = -0.104
@@ -376,10 +308,6 @@ icon = ExtResource( 2 )
 [connection signal="pressed" from="GEN_TIME_minus" to="." method="_on_GEN_TIME_minus_pressed"]
 [connection signal="pressed" from="TARGET_THANKS_add" to="." method="_on_TARGET_THANKS_add_pressed"]
 [connection signal="pressed" from="TARGET_THANKS_minus" to="." method="_on_TARGET_THANKS_minus_pressed"]
-[connection signal="pressed" from="TOTAL_THANKS_add" to="." method="_on_TOTAL_THANKS_add_pressed"]
-[connection signal="pressed" from="TOTAL_THANKS_minus" to="." method="_on_TOTAL_THANKS_minus_pressed"]
 [connection signal="pressed" from="PASSENGERS_LOST_ALLOWED_add" to="." method="_on_PASSENGERS_LOST_ALLOWED_add_pressed"]
 [connection signal="pressed" from="PASSENGERS_LOST_ALLOWED_minus" to="." method="_on_PASSENGERS_LOST_ALLOWED_minus_pressed"]
-[connection signal="pressed" from="PASSENGERS_LOST_add" to="." method="_on_PASSENGERS_LOST_add_pressed"]
-[connection signal="pressed" from="PASSENGERS_LOST_minus" to="." method="_on_PASSENGERS_LOST_minus_pressed"]
 [connection signal="pressed" from="Play" to="." method="_on_Play_pressed"]

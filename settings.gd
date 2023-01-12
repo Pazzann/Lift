@@ -20,9 +20,8 @@ func _ready():
 	get_node("PLACE_COUNT_value").text = str(Global.PLACE_COUNT)
 	get_node("REPAIR_TIME_value").text = str(Global.REPAIR_TIME)
 	get_node("TARGET_THANKS_value").text = str(Global.TARGET_THANKS)
-	get_node("TOTAL_THANKS_value").text = str(Global.TOTAL_THANKS)
 	get_node("PASSENGERS_LOST_ALLOWED_value").text = str(Global.PASSENGERS_LOST_ALLOWED)
-	get_node("PASSENGERS_LOST_value").text = str(Global.PASSENGERS_LOST)
+
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -112,15 +111,6 @@ func _on_TARGET_THANKS_minus_pressed():
 	get_node("TARGET_THANKS_value").text = str(Global.TARGET_THANKS)
 
 
-func _on_TOTAL_THANKS_add_pressed():
-	Global.TOTAL_THANKS += 1
-	get_node("TOTAL_THANKS_value").text = str(Global.TOTAL_THANKS)
-
-
-func _on_TOTAL_THANKS_minus_pressed():
-	Global.TOTAL_THANKS -= 1
-	get_node("TOTAL_THANKS_value").text = str(Global.TOTAL_THANKS)
-
 func _on_PASSENGERS_LOST_ALLOWED_add_pressed():
 	Global.PASSENGERS_LOST_ALLOWED += 1
 	get_node("PASSENGERS_LOST_ALLOWED_value").text = str(Global.PASSENGERS_LOST_ALLOWED)
@@ -129,13 +119,3 @@ func _on_PASSENGERS_LOST_ALLOWED_add_pressed():
 func _on_PASSENGERS_LOST_ALLOWED_minus_pressed():
 	Global.TARGET_THANKS -= 1
 	get_node("TARGET_THANKS_value").text = str(Global.TARGET_THANKS)
-
-
-func _on_PASSENGERS_LOST_add_pressed():
-	Global.PASSENGERS_LOST += 1
-	get_node("PASSENGERS_LOST_value").text = str(Global.PASSENGERS_LOST)
-
-
-func _on_PASSENGERS_LOST_minus_pressed():
-	Global.PASSENGERS_LOST -= 1
-	get_node("PASSENGERS_LOST_value").text = str(Global.PASSENGERS_LOST)
