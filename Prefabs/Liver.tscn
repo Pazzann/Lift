@@ -10,35 +10,7 @@
 [ext_resource path="res://Sprites/Liver1/Liver4.png" type="Texture" id=8]
 [ext_resource path="res://Sprites/Liver1/Liver8.png" type="Texture" id=9]
 [ext_resource path="res://Sprites/Liver1/Liver1.png" type="Texture" id=10]
-
-[sub_resource type="CSharpScript" id=1]
-script/source = "using Godot;
-using System;
-
-public class Liver : Node
-{
-    private float _timeSinceSpawn = 0.0f;
-
-    private float _happyTime;
-
-    private float _timeInQueue;
-    // Called when the node enters the scene tree for the first time.
-    public override void _Ready()
-    {
-        _happyTime = GetNode<>(\"/root/Constants\");
-    }
-
-    // Called every frame. 'delta' is the elapsed time since the previous frame.
-    public override void _Process(float delta)
-    {
-        _timeSinceSpawn += delta;
-    }
-
-    private void _checkStatus()
-    {
-        
-    }
-}"
+[ext_resource path="res://Scripts/Liver.gd" type="Script" id=11]
 
 [sub_resource type="SpriteFrames" id=2]
 animations = [ {
@@ -54,7 +26,7 @@ animations = [ {
 } ]
 
 [node name="Liver" type="Node2D"]
-script = SubResource( 1 )
+script = ExtResource( 11 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 2 )
