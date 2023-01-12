@@ -1,9 +1,10 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Main.gd" type="Script" id=1]
 [ext_resource path="res://Lift.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Floor.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Panel[temp].tscn" type="PackedScene" id=4]
+[ext_resource path="res://pause.png" type="Texture" id=5]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 94.5, 10 )
@@ -86,11 +87,12 @@ shape = SubResource( 2 )
 autostart = true
 
 [node name="Pause" type="Button" parent="."]
-margin_left = 954.0
-margin_top = 23.0
-margin_right = 1004.0
-margin_bottom = 43.0
-text = "Pause"
+margin_left = 990.0
+margin_top = 30.0
+margin_right = 1025.0
+margin_bottom = 65.0
+icon = ExtResource( 5 )
+icon_align = 1
 
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
 [connection signal="pressed" from="Pause" to="." method="_on_Pause_pressed"]

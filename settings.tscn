@@ -277,10 +277,10 @@ text = "0"
 [node name="Play" type="Button" parent="."]
 anchor_left = -0.104
 anchor_right = -0.104
-margin_left = 106.496
-margin_top = 2.0
-margin_right = 168.496
-margin_bottom = 58.0
+margin_left = 1076.5
+margin_top = 20.0
+margin_right = 1111.5
+margin_bottom = 55.0
 icon = ExtResource( 2 )
 
 [connection signal="pressed" from="MAX_QUEUE_COUNT_add" to="." method="_on_MAX_QUEUE_COUNT_add_pressed"]
