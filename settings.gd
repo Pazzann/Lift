@@ -58,3 +58,23 @@ func _on_PLACE_COUNT_minus_pressed():
 	Global.PLACE_COUNT -= 1
 	get_node("PLACE_COUNT_value").text = str(Global.PLACE_COUNT)
 
+
+
+func _on_REPAIR_TIME_add_pressed():
+	Global.REPAIR_TIME += 1
+	get_node("REPAIR_TIME_value").text = str(Global.REPAIR_TIME)
+
+
+func _on_REPAIR_TIME_minus_pressed():
+	Global.REPAIR_TIME -= 1
+	get_node("REPAIR_TIME_value").text = str(Global.REPAIR_TIME)
+
+
+func _on_HAPPY_TIME_add_pressed():
+	Global.HAPPY_TIME += 1
+	get_node("HAPPY_TIME_value").text = str(Global.HAPPY_TIME)
+
+
+func _on_HAPPY_TIME_minus_pressed():
+	Global.HAPPY_TIME -= 1
+	get_node("HAPPY_TIME_value").text = str(Global.HAPPY_TIME)

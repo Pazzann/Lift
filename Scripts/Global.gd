@@ -4,11 +4,11 @@ extends Node
 # Declare member variables here. Examples:
 # var a = 2
 # var b = "text"
-var MAX_QUEUE_COUNT = 0
-var MAX_QUEUE_TIME = 0
+var MAX_QUEUE_COUNT = 20
+var MAX_QUEUE_TIME = 12
 var PLACE_COUNT = 0
 var REPAIR_TIME = 0
-var HAPPY_TIME = 0
+var HAPPY_TIME = 1
 var GEN_TIME = 0
 var TARGET_THANKS = 0
 
