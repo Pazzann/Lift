@@ -36,6 +36,7 @@ margin_top = 25.0
 margin_right = 256.784
 margin_bottom = 32.4
 icon = ExtResource( 4 )
+icon_align = 1
 
 [node name="MAX_QUEUE_COUNT_minus" type="Button" parent="."]
 anchor_right = 0.009
@@ -45,6 +46,7 @@ margin_top = 53.0
 margin_right = 256.0
 margin_bottom = 60.0
 icon = ExtResource( 3 )
+icon_align = 1
 
 [node name="MAX_QUEUE_TIME_add" type="Button" parent="."]
 anchor_right = 0.009
@@ -53,6 +55,8 @@ margin_left = 248.0
 margin_top = 87.0
 margin_right = 256.784
 margin_bottom = 94.4
+icon = ExtResource( 4 )
+icon_align = 1
 
 [node name="MAX_QUEUE_TIME_minus" type="Button" parent="."]
 anchor_right = 0.009
@@ -61,6 +65,8 @@ margin_left = 248.0
 margin_top = 115.0
 margin_right = 256.784
 margin_bottom = 122.4
+icon = ExtResource( 3 )
+icon_align = 1
 
 [node name="MAX_QUEUE_TIME" type="Label" parent="."]
 margin_left = 69.0
@@ -83,6 +89,8 @@ margin_left = 249.0
 margin_top = 142.0
 margin_right = 257.784
 margin_bottom = 149.4
+icon = ExtResource( 4 )
+icon_align = 1
 
 [node name="PLACE_COUNT_minus" type="Button" parent="."]
 anchor_right = 0.009
@@ -91,6 +99,8 @@ margin_left = 250.0
 margin_top = 173.0
 margin_right = 258.784
 margin_bottom = 180.4
+icon = ExtResource( 3 )
+icon_align = 1
 
 [node name="PLACE_COUNT" type="Label" parent="."]
 margin_left = 67.0
@@ -113,6 +123,8 @@ margin_left = 248.0
 margin_top = 204.0
 margin_right = 256.784
 margin_bottom = 211.4
+icon = ExtResource( 4 )
+icon_align = 1
 
 [node name="REPAIR_TIME_minus" type="Button" parent="."]
 anchor_right = 0.009
@@ -121,6 +133,8 @@ margin_left = 247.0
 margin_top = 234.0
 margin_right = 255.784
 margin_bottom = 241.4
+icon = ExtResource( 3 )
+icon_align = 1
 
 [node name="REPAIR_TIME" type="Label" parent="."]
 margin_left = 68.0
@@ -143,6 +157,8 @@ margin_left = 249.0
 margin_top = 382.0
 margin_right = 257.784
 margin_bottom = 389.4
+icon = ExtResource( 4 )
+icon_align = 1
 
 [node name="HAPPY_TIME_minus" type="Button" parent="."]
 anchor_right = 0.009
@@ -151,6 +167,8 @@ margin_left = 252.0
 margin_top = 416.0
 margin_right = 260.784
 margin_bottom = 423.4
+icon = ExtResource( 3 )
+icon_align = 1
 
 [node name="HAPPY_TIME" type="Label" parent="."]
 margin_left = 78.0
@@ -173,6 +191,8 @@ margin_left = 248.0
 margin_top = 261.0
 margin_right = 256.784
 margin_bottom = 270.4
+icon = ExtResource( 4 )
+icon_align = 1
 
 [node name="GEN_TIME_minus" type="Button" parent="."]
 anchor_right = 0.009
@@ -181,6 +201,8 @@ margin_left = 248.0
 margin_top = 289.0
 margin_right = 256.784
 margin_bottom = 296.4
+icon = ExtResource( 3 )
+icon_align = 1
 
 [node name="GEN_TIME" type="Label" parent="."]
 margin_left = 65.0
@@ -203,6 +225,8 @@ margin_left = 250.0
 margin_top = 319.0
 margin_right = 258.784
 margin_bottom = 328.4
+icon = ExtResource( 4 )
+icon_align = 1
 
 [node name="TARGET_THANKS_minus" type="Button" parent="."]
 anchor_right = 0.009
@@ -211,6 +235,8 @@ margin_left = 247.0
 margin_top = 347.0
 margin_right = 255.784
 margin_bottom = 354.4
+icon = ExtResource( 3 )
+icon_align = 1
 
 [node name="TARGET_THANKS" type="Label" parent="."]
 margin_left = 64.0
