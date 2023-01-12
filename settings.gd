@@ -17,13 +17,12 @@ func _ready():
 
 
 func _on_Button_pressed():
-	Global.MAX_QUEUE_COUNT += 1
 	get_node("MAX_QUEUE_COUNT_value").text = str(Global.MAX_QUEUE_COUNT)
 
 
 func _on_MAX_QUEUE_COUNT_add_pressed():
-	Global.MAX_QUEUE_COUNT += 1
-	get_node("MAX_QUEUE_COUNT_value").text = str(Global.MAX_QUEUE_COUNT)
+	get_node("/root/Constants.tscn").myConstant = 1
+	#get_node("MAX_QUEUE_COUNT_value").text = str(Global.MAX_QUEUE_COUNT)
 
 
 func _on_MAX_QUEUE_COUNT_minus_pressed():
