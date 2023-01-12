@@ -72,6 +72,36 @@ margin_right = 252.0
 margin_bottom = 132.0
 text = "0"
 
+[node name="PLACE_COUNT_add" type="Button" parent="."]
+anchor_right = 0.009
+anchor_bottom = 0.021
+margin_left = 249.0
+margin_top = 142.0
+margin_right = 257.784
+margin_bottom = 149.4
+
+[node name="PLACE_COUNT_minus" type="Button" parent="."]
+anchor_right = 0.009
+anchor_bottom = 0.021
+margin_left = 250.0
+margin_top = 173.0
+margin_right = 258.784
+margin_bottom = 180.4
+
+[node name="PLACE_COUNT" type="Label" parent="."]
+margin_left = 67.0
+margin_top = 165.0
+margin_right = 205.0
+margin_bottom = 193.0
+text = "MAX_QUEUE_TIME"
+
+[node name="PLACE_COUNT_value" type="Label" parent="."]
+margin_left = 219.0
+margin_top = 164.0
+margin_right = 243.0
+margin_bottom = 191.0
+text = "0"
+
 [node name="Play" type="Button" parent="."]
 margin_right = 12.0
 margin_bottom = 20.0
@@ -81,4 +111,6 @@ icon = ExtResource( 2 )
 [connection signal="pressed" from="MAX_QUEUE_COUNT_minus" to="." method="_on_MAX_QUEUE_COUNT_minus_pressed"]
 [connection signal="pressed" from="MAX_QUEUE_TIME_add" to="." method="_on_MAX_QUEUE_TIME_add_pressed"]
 [connection signal="pressed" from="MAX_QUEUE_TIME_minus" to="." method="_on_MAX_QUEUE_TIME_minus_pressed"]
+[connection signal="pressed" from="PLACE_COUNT_add" to="." method="_on_PLACE_COUNT_add_pressed"]
+[connection signal="pressed" from="PLACE_COUNT_minus" to="." method="_on_PLACE_COUNT_minus_pressed"]
 [connection signal="pressed" from="Play" to="." method="_on_Play_pressed"]
