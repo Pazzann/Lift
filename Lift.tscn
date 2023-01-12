@@ -1,0 +1,22 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Sprites/lift-open1.png" type="Texture" id=1]
+[ext_resource path="res://Sprites/lift-open2.png" type="Texture" id=2]
+[ext_resource path="res://Lift.gd" type="Script" id=3]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 1 ), ExtResource( 2 ) ],
+"loop": true,
+"name": "open",
+"speed": 5.0
+} ]
+
+[node name="Lift" type="RigidBody2D"]
+gravity_scale = 0.0
+script = ExtResource( 3 )
+
+[node name="LiftSprite" type="AnimatedSprite" parent="."]
+position = Vector2( 307, -202 )
+frames = SubResource( 1 )
+animation = "open"
