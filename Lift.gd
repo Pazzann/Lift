@@ -3,8 +3,10 @@ extends RigidBody2D
 var speed = 200.0
 var isOpened = false
 
-var velocity = Vector2.ZERO
+export(Vector2) var velocity = Vector2.ZERO
 export(bool) var isMoving = false
+
+export(bool) var isMovingUp = false
 
 # Declare member variables here. Examples:
 # var a = 2
@@ -18,9 +20,12 @@ func _input(event):
 func move_up():
 	velocity.y = -1.0
 	isMoving = true
+	isMovingUp = true
+	
 func move_down():			
 	velocity.y = 1.0
 	isMoving = true
+	isMovingUp = false
 
 func stop():
 	velocity.y = 0.0

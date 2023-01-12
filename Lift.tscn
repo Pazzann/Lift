@@ -13,7 +13,7 @@ animations = [ {
 } ]
 
 [sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 75, 84 )
+extents = Vector2( 78, 69 )
 
 [node name="Lift" type="RigidBody2D"]
 gravity_scale = 0.0
