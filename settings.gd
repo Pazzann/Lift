@@ -83,3 +83,24 @@ func _on_HAPPY_TIME_minus_pressed():
 	if Global.HAPPY_TIME > 1:
 		Global.HAPPY_TIME -= 1
 	get_node("HAPPY_TIME_value").text = str(Global.HAPPY_TIME)
+
+
+func _on_GEN_TIME_add_pressed():
+	Global.GEN_TIME += 1
+	get_node("GEN_TIME_value").text = str(Global.GEN_TIME)
+
+
+func _on_GEN_TIME_minus_pressed():
+	Global.GEN_TIME -= 1
+	get_node("GEN_TIME_value").text = str(Global.GEN_TIME)
+
+
+
+func _on_TARGET_THANKS_add_pressed():
+	Global.TARGET_THANKS += 1
+	get_node("TARGET_THANKS_value").text = str(Global.TARGET_THANKS)
+
+
+func _on_TARGET_THANKS_minus_pressed():
+	Global.TARGET_THANKS -= 1
+	get_node("TARGET_THANKS_value").text = str(Global.TARGET_THANKS)
