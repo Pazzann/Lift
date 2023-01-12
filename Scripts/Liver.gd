@@ -98,5 +98,6 @@ func checkLeave():
 		queue_free();
 	print(Global.IS_OPENNED_DOOR)
 	print(currFloor)
+	print(Global.LIFT_FLOOR)
 	if(currFloor == 8-Global.LIFT_FLOOR && Global.IS_OPENNED_DOOR):
 		LiftMove()

@@ -14,7 +14,7 @@ func _input(event):
 
 
 func _on_Restart_pressed():
-	get_tree().change_scene("Main.tscn")
+	get_tree().change_scene("res://settings.tscn")
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
