@@ -18,7 +18,7 @@ func LiftMove():
 	moveIntoALift = true
 	var collisionShape = get_child(1) as CollisionShape2D
 	collisionShape.disabled = true
-	move_and_collide(Vector2(10, 0))
+	move_and_collide(Vector2(rand_range(10, 20), 0))
 	var livers = get_parent().get_children()
 	for liver in livers:
 		liver.moveInQueue()
