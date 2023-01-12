@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Sprites/lift-open1.png" type="Texture" id=1]
 [ext_resource path="res://Sprites/lift-open2.png" type="Texture" id=2]
@@ -12,10 +12,19 @@ animations = [ {
 "speed": 5.0
 } ]
 
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 75, 84 )
+
 [node name="Lift" type="RigidBody2D"]
 gravity_scale = 0.0
 script = ExtResource( 3 )
 
 [node name="LiftSprite" type="AnimatedSprite" parent="."]
+position = Vector2( -131, -446 )
+scale = Vector2( 0.75, 1 )
 frames = SubResource( 1 )
 animation = "open_close"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 65, 74 )
+shape = SubResource( 2 )
