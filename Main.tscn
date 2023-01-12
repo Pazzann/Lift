@@ -7,3 +7,9 @@
 script = ExtResource( 1 )
 
 [node name="Lift" parent="." instance=ExtResource( 2 )]
+
+[node name="Camera2D" type="Camera2D" parent="Lift"]
+current = true
+
+[node name="LiftPos" type="Position2D" parent="."]
+position = Vector2( 488, 304 )

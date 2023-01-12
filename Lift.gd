@@ -9,7 +9,7 @@ var isOpened = false
 
 func _input(event):
 	if event is InputEventKey:
-		if event.pressed and event.scancode == KEY_O:
+		if event.pressed and ((event.scancode == KEY_O and !isOpened) or (event.scancode == KEY_C and isOpened)):
 			toogle_lift()
 
 # Called when the node enters the scene tree for the first time.
