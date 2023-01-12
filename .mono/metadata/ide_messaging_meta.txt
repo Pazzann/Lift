@@ -1,2 +1,2 @@
-﻿42987
-/home/egor/Godot/Godot_v3.5.1-stable_mono_x11_64/Godot_v3.5.1-stable_mono_x11.64
+﻿51556
+C:/Users/user/Desktop/Godot_v3.5.1-stable_mono_win64/Godot_v3.5.1-stable_mono_win64.exe
