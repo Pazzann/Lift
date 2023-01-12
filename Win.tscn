@@ -26,3 +26,5 @@ margin_top = 0.199982
 margin_right = 57.504
 margin_bottom = 20.2
 text = "Restart"
+
+[connection signal="pressed" from="Restart" to="." method="_on_Restart_pressed"]
