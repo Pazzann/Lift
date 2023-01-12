@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Main.gd" type="Script" id=1]
 [ext_resource path="res://Lift.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Floor.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Panel[temp].tscn" type="PackedScene" id=4]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 94.5, 10 )
@@ -25,6 +26,12 @@ position = Vector2( -188, 83 )
 current = true
 limit_top = -600
 limit_bottom = 610
+
+[node name="Panel[temp]" parent="Lift/Camera2D" instance=ExtResource( 4 )]
+margin_left = -1384.0
+margin_top = -67.0
+margin_right = -1384.0
+margin_bottom = -67.0
 
 [node name="Floors" parent="." instance=ExtResource( 3 )]
 position = Vector2( 533, 2 )

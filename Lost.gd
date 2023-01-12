@@ -12,10 +12,9 @@ func _input(event):
 			get_tree().quit()
 
 
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	get_tree().change_scene("Main.tscn")
 
+func _on_Restart_pressed():
+	get_tree().change_scene("Main.tscn")
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):

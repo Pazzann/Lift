@@ -39,14 +39,9 @@ func _process(delta):
 	Global.LIFT_FLOOR = floor_n
 	
 func random_person():
-	print("hgf")
 	var anchor_name = "s" + String(randi() % 9)
 	var anchor = get_node(anchor_name)
 	var node = preload("res://Prefabs/Liver.tscn").instance()
-	
-	print(anchor_name)
-	print(node)
-	
 	anchor.add_child(node)
 	
 

@@ -16,8 +16,6 @@ onready var animation = get_child(0) as AnimatedSprite
 
 func LiftMove():
 	moveIntoALift = true
-	var collisionShape = get_child(1) as CollisionShape2D
-	collisionShape.disabled = true
 	var livers = get_parent().get_children()
 	for liver in livers:
 		if(liver.inQueue):
@@ -28,6 +26,7 @@ func LiftMove():
 
 func SetCurrFloor():
 	currFloor = Global.LIFT_FLOOR;
+	
 	if(floorNumber == currFloor && Global.IS_OPENNED_DOOR):
 		Global.TOTAL_THANKS+=1
 		if(happy):
@@ -97,6 +96,7 @@ func checkLeave():
 			
 		Global.PASSENGERS_LOST += 1
 		queue_free();
-	 
-	if(currFloor == Global.LIFT_FLOOR && Global.IS_OPENNED_DOOR):
+	print(Global.IS_OPENNED_DOOR)
+	print(currFloor)
+	if(currFloor == 8-Global.LIFT_FLOOR && Global.IS_OPENNED_DOOR):
 		LiftMove()
