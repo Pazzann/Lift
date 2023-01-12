@@ -29,6 +29,8 @@ func _process(delta):
 		$Lift.position.y -= 1
 		$Lift.stop()
 		
+	Global.LIFT_POS_X = $Lift.position.x
+	Global.LIFT_POS_Y = $Lift.position.y
 	#if $Lift.position.y <= -480:
 		#$Lift.position.y += 1
 		#$Lift.stop()

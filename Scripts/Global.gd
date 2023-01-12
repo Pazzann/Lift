@@ -16,6 +16,8 @@ var PASSENGERS_LOST_ALLOWED = 2
 var PASSENGERS_LOST = 0
 var LIFT_FLOOR = 0
 var IS_OPENNED_DOOR = false
+var LIFT_POS_Y = 0;
+var LIFT_POS_X = 0;
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
