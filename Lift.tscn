@@ -13,18 +13,18 @@ animations = [ {
 } ]
 
 [sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 75, 84 )
+extents = Vector2( 78, 69 )
 
 [node name="Lift" type="RigidBody2D"]
 gravity_scale = 0.0
 script = ExtResource( 3 )
 
 [node name="LiftSprite" type="AnimatedSprite" parent="."]
-position = Vector2( -131, -446 )
-scale = Vector2( 0.75, 1 )
+position = Vector2( -158, -398 )
+scale = Vector2( 0.9, 0.9 )
 frames = SubResource( 1 )
 animation = "open_close"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 65, 74 )
+position = Vector2( 78, 72 )
 shape = SubResource( 2 )
