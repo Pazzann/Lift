@@ -16,11 +16,15 @@ onready var animation = get_child(0) as AnimatedSprite
 
 func LiftMove():
 	moveIntoALift = true
+	inQueue = false
+	(get_child(1) as CollisionShape2D).disabled = true;
+	position = Vector2(position.x + rand_range(50, 75), position.y)
+	(get_child(1) as CollisionShape2D).disabled = false;
 	var livers = get_parent().get_children()
 	for liver in livers:
 		if(liver.inQueue):
 				(liver.get_child(1) as CollisionShape2D).disabled = true;
-				liver.position += Vector2(rand_range(50, 100), 0)
+				liver.position += Vector2(25, 0)
 				(liver.get_child(1) as CollisionShape2D).disabled = false;
 	
 
@@ -92,12 +96,7 @@ func checkLeave():
 				(liver.get_child(1) as CollisionShape2D).disabled = true;
 				liver.position += Vector2(25, 0)
 				(liver.get_child(1) as CollisionShape2D).disabled = false;
-
-			
 		Global.PASSENGERS_LOST += 1
 		queue_free();
-	print(Global.IS_OPENNED_DOOR)
-	print(currFloor)
-	print(Global.LIFT_FLOOR)
-	if(currFloor == 8-Global.LIFT_FLOOR && Global.IS_OPENNED_DOOR):
+	if(currFloor == (Global.LIFT_FLOOR-1) && Global.IS_OPENNED_DOOR):
 		LiftMove()

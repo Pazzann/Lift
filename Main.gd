@@ -7,7 +7,7 @@ extends Node2D
 var floor_n = 0
 
 func _input(event):
-	print(floor_n)
+
 	if event is InputEventKey:
 		if event.pressed and event.scancode == KEY_ESCAPE:
 			get_tree().quit()

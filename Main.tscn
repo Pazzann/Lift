@@ -62,6 +62,7 @@ position = Vector2( 223, 556 )
 position = Vector2( 222, 414 )
 
 [node name="s2" type="Node2D" parent="."]
+position = Vector2( 230, -31 )
 
 [node name="s3" type="Node2D" parent="."]
 position = Vector2( 239, -481 )
