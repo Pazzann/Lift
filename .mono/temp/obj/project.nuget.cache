@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "m1GOdX7zaakKd5bpHuD7iTI1RVZs1PmBPM5vs1NBA+1aCCIWcj6YYx+uuZPo1Q6JRo46ydYppse2frGFDm1URA==",
+  "dgSpecHash": "DNiJWHE2F/9k7Gi4T8nznREqhF81qQ5ThaYiEL/xpoxpqzkfzrLnH8xHj3LEXTyC+pakR6sTNLQLkY2mO3OoZQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\manto\\OneDrive\\Documents\\MyGames\\Lift\\Lift.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "/home/egor/Projects/Lift/Lift.csproj",
+  "expectedPackageFiles": [
+    "/home/egor/.nuget/packages/microsoft.netframework.referenceassemblies/1.0.2/microsoft.netframework.referenceassemblies.1.0.2.nupkg.sha512",
+    "/home/egor/.nuget/packages/microsoft.netframework.referenceassemblies.net472/1.0.2/microsoft.netframework.referenceassemblies.net472.1.0.2.nupkg.sha512"
+  ],
   "logs": []
 }
