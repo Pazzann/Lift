@@ -18,23 +18,21 @@ func LiftMove():
 	moveIntoALift = true
 	var collisionShape = get_child(1) as CollisionShape2D
 	collisionShape.disabled = true
-	move_and_collide(Vector2(rand_range(10, 20), 0))
 	var livers = get_parent().get_children()
 	for liver in livers:
 		if(liver.inQueue):
 				(liver.get_child(1) as CollisionShape2D).disabled = true;
-				liver.position += Vector2(75, 0)
+				liver.position += Vector2(rand_range(50, 100), 0)
 				(liver.get_child(1) as CollisionShape2D).disabled = false;
 	
 
-func SetCurrFloor(floornum,isOpenedDoor):
-	if(floorNumber == floornum && isOpenedDoor):
+func SetCurrFloor():
+	currFloor = Global.LIFT_FLOOR;
+	if(floorNumber == currFloor && Global.IS_OPENNED_DOOR):
 		Global.TOTAL_THANKS+=1
 		if(happy):
 			Global.TOTAL_THANKS+=1
 		queue_free()
-	else:
-		currFloor = floornum
 
 
 
@@ -42,6 +40,7 @@ func SetCurrFloor(floornum,isOpenedDoor):
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	currFloor = round(position.y / 150 + 3)
 	happyTime = Global.HAPPY_TIME
 	maxQueueTime = Global.MAX_QUEUE_TIME
 	maxQueueCount = Global.MAX_QUEUE_COUNT
@@ -55,6 +54,7 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	if (moveIntoALift):
+		SetCurrFloor()
 		return
 	time += delta
 	
@@ -97,3 +97,6 @@ func checkLeave():
 			
 		Global.PASSENGERS_LOST += 1
 		queue_free();
+	 
+	if(currFloor == Global.LIFT_FLOOR && Global.IS_OPENNED_DOOR):
+		LiftMove()
