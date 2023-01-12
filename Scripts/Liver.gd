@@ -33,6 +33,10 @@ func SetCurrFloor(floornum,isOpenedDoor):
 	else:
 		currFloor = floornum
 
+
+
+
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	happyTime = Global.HAPPY_TIME
@@ -66,6 +70,7 @@ func move(velocity):
 	var parent = get_parent()
 	var waiter_count = parent.get_child_count();
 	if(waiter_count > maxQueueCount):
+		Global.PASSENGERS_LOST += 1
 		queue_free()
 		return
 	return velocity
@@ -79,6 +84,5 @@ func checkLeave():
 		happy = false
 		animation.self_modulate = Color(1, 1, 1, 1)
 	if(time > maxQueueTime):
+		Global.PASSENGERS_LOST += 1
 		queue_free();
-		var animation = get_child(0) as AnimatedSprite
-		animation.play("walk")
