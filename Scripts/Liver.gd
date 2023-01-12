@@ -9,7 +9,8 @@ var isLeaving = false
 var inQueue = false
 var moveIntoALift = false
 var moveFromLift = false
-var floorNumber;
+var floorNumber
+var currFloor;
 onready var animation = get_child(0) as AnimatedSprite
 
 
@@ -23,7 +24,11 @@ func LiftMove():
 		liver.moveInQueue()
 	
 
-
+func SetCurrFloor(floornum,isOpenedDoor):
+	if(floorNumber == floornum && isOpenedDoor):
+		queue_free()
+	else:
+		currFloor = floornum
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -32,6 +37,7 @@ func _ready():
 	maxQueueCount = Global.MAX_QUEUE_COUNT
 	animation.self_modulate = Color(1, 2, 1, 1)
 	animation.play("walk")
+	floorNumber = round(rand_range(1, 8))
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
