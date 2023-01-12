@@ -60,3 +60,6 @@ func _on_LiftTrigger_area_entered(body, i):
 
 func _on_Timer_timeout():
 	random_person()
+	
+func _on_Pause_pressed():
+	get_tree().change_scene("Settings.tscn")
