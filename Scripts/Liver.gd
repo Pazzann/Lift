@@ -26,6 +26,9 @@ func LiftMove():
 
 func SetCurrFloor(floornum,isOpenedDoor):
 	if(floorNumber == floornum && isOpenedDoor):
+		Global.TOTAL_THANKS+=1
+		if(happy):
+			Global.TOTAL_THANKS+=1
 		queue_free()
 	else:
 		currFloor = floornum
@@ -38,6 +41,9 @@ func _ready():
 	animation.self_modulate = Color(1, 2, 1, 1)
 	animation.play("walk")
 	floorNumber = round(rand_range(1, 8))
+	var label = get_child(2) as Label
+	label.text = str(floorNumber)
+	
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
@@ -65,16 +71,14 @@ func move(velocity):
 	return velocity
 	
 
-
 func moveInQueue():
 	inQueue = false
 	
 func checkLeave():
-
 	if(time > happyTime):
 		happy = false
 		animation.self_modulate = Color(1, 1, 1, 1)
 	if(time > maxQueueTime):
-		isLeaving = true
+		queue_free();
 		var animation = get_child(0) as AnimatedSprite
 		animation.play("walk")
