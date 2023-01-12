@@ -38,7 +38,7 @@ func _process(delta):
 	if (moveIntoALift):
 		return
 	time += delta
-	print(time)
+	
 	if(inQueue):
 		checkLeave()
 	else:
@@ -64,6 +64,7 @@ func moveInQueue():
 	inQueue = false
 	
 func checkLeave():
+
 	if(time > happyTime):
 		happy = false
 		animation.self_modulate = Color(1, 1, 1, 1)
