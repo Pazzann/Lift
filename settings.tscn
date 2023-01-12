@@ -277,9 +277,9 @@ text = "0"
 [node name="Play" type="Button" parent="."]
 anchor_left = -0.104
 anchor_right = -0.104
-margin_left = 1076.5
+margin_left = 1066.5
 margin_top = 20.0
-margin_right = 1111.5
+margin_right = 1101.5
 margin_bottom = 55.0
 icon = ExtResource( 2 )
 
