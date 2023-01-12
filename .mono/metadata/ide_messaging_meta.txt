@@ -1,2 +1,2 @@
-﻿32901
-/home/egor/Godot/Godot_v3.5.1-stable_mono_x11_64/Godot_v3.5.1-stable_mono_x11.64
+﻿60539
+C:/Program Files (x86)/Steam/steamapps/common/Godot Engine/godot.windows.opt.tools.64.exe

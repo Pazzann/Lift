@@ -273,7 +273,6 @@ margin_top = 465.0
 margin_right = 296.0
 margin_bottom = 491.0
 text = "0"
-percent_visible = 2.0
 
 [node name="Play" type="Button" parent="."]
 anchor_left = -0.104
