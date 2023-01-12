@@ -6,12 +6,14 @@ extends Node
 # var b = "text"
 var MAX_QUEUE_COUNT = 20
 var MAX_QUEUE_TIME = 12
-var PLACE_COUNT = 0
+var PLACE_COUNT = 5
 var REPAIR_TIME = 0
 var HAPPY_TIME = 7
 var GEN_TIME = 0
-var TARGET_THANKS = 0
+var TARGET_THANKS = 15
 var TOTAL_THANKS = 0
+var PASSENGERS_LOST_ALLOWED = 2
+var PASSENGERS_LOST = 0
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
