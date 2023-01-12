@@ -28,7 +28,8 @@ func _on_MAX_QUEUE_COUNT_add_pressed():
 
 
 func _on_MAX_QUEUE_COUNT_minus_pressed():
-	Global.MAX_QUEUE_COUNT -= 1
+	if Global.MAX_QUEUE_COUNT > 1:
+		Global.MAX_QUEUE_COUNT -= 1
 	get_node("MAX_QUEUE_COUNT_value").text = str(Global.MAX_QUEUE_COUNT)
 
 
@@ -38,7 +39,8 @@ func _on_MAX_QUEUE_TIME_add_pressed():
 
 
 func _on_MAX_QUEUE_TIME_minus_pressed():
-	Global.MAX_QUEUE_TIME -= 1
+	if Global.MAX_QUEUE_TIME > 1:
+		Global.MAX_QUEUE_TIME -= 1
 	get_node("MAX_QUEUE_TIME_value").text = str(Global.MAX_QUEUE_TIME)
 
 
@@ -52,7 +54,8 @@ func _on_PLACE_COUNT_add_pressed():
 
 
 func _on_PLACE_COUNT_minus_pressed():
-	Global.PLACE_COUNT -= 1
+	if Global.PLACE_COUNT > 1:
+		Global.PLACE_COUNT -= 1
 	get_node("PLACE_COUNT_value").text = str(Global.PLACE_COUNT)
 
 
@@ -63,7 +66,8 @@ func _on_REPAIR_TIME_add_pressed():
 
 
 func _on_REPAIR_TIME_minus_pressed():
-	Global.REPAIR_TIME -= 1
+	if Global.REPAIR_TIME > 1:
+		Global.REPAIR_TIME -= 1
 	get_node("REPAIR_TIME_value").text = str(Global.REPAIR_TIME)
 
 
@@ -73,7 +77,8 @@ func _on_HAPPY_TIME_add_pressed():
 
 
 func _on_HAPPY_TIME_minus_pressed():
-	Global.HAPPY_TIME -= 1
+	if Global.HAPPY_TIME > 1:
+		Global.HAPPY_TIME -= 1
 	get_node("HAPPY_TIME_value").text = str(Global.HAPPY_TIME)
 
 

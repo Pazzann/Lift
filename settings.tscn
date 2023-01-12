@@ -1,7 +1,9 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://settings.gd" type="Script" id=1]
 [ext_resource path="res://play.png" type="Texture" id=2]
+[ext_resource path="res://down.png" type="Texture" id=3]
+[ext_resource path="res://up.png" type="Texture" id=4]
 
 [node name="Control" type="Control"]
 anchor_right = 1.0
@@ -33,14 +35,16 @@ margin_left = 248.0
 margin_top = 25.0
 margin_right = 256.784
 margin_bottom = 32.4
+icon = ExtResource( 4 )
 
 [node name="MAX_QUEUE_COUNT_minus" type="Button" parent="."]
 anchor_right = 0.009
 anchor_bottom = 0.021
 margin_left = 248.0
 margin_top = 53.0
-margin_right = 256.784
-margin_bottom = 60.4
+margin_right = 256.0
+margin_bottom = 60.0
+icon = ExtResource( 3 )
 
 [node name="MAX_QUEUE_TIME_add" type="Button" parent="."]
 anchor_right = 0.009
